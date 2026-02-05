@@ -29,3 +29,14 @@ cd nome-do-repositorio
 ```
 code .
 ```
+ ## COMANDOS BASICOS
+
+ 1) Adicionar aquivos para commit:
+ git add .
+
+ 2) Criar versionamento (Commit):
+ git commit -m "comandos basicos do git."
+
+ 3) Enviar alteracoes para github
+ git push
+
