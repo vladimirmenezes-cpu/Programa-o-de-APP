@@ -7,7 +7,7 @@ Atividades e trabalhos da matéria de Programação de aplicativos do segundo mo
 
 
 2) Fazer login no GitHub via terminal:
-```
+...
 gh auth login
 ```
 - Aperte a tecla enter até gerar um código
