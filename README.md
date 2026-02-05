@@ -40,3 +40,8 @@ code .
  3) Enviar alteracoes para github
  git push
 
+ ## Branch
+
+ Verificiar branches:
+ git branch 
+ 
