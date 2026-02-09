@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 37, 37);
+    background-image: url("assets/fundo.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+    font-size: 100px;
+    margin: 20px;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}
