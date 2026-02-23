@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 body {
-    background-color: blanchedalmond;
-    background-image: url();
 
     background-repeat: no-repeat;
     background-position: center;
@@ -14,6 +12,19 @@ body {
     background-attachment: fixed;
 
     font-family: 'Times New Roman', Times, serif;
+}
+
+.pag1  {
+    background-color: blanchedalmond;
+}
+
+.pag2 {
+    background-color: blanchedalmond;
+}
+
+
+.pagina3 {
+    background-image: url(assets/fundo3.jpg);
 }
 
 h2 {
@@ -30,7 +41,7 @@ p {
 
 a {
     display: block;
-    max-width: 350px;
+    max-width: 50px;
     margin: 20px auto;
 }
 
@@ -45,5 +56,16 @@ button{
     margin: 20px auto;
     cursor: pointer;
     padding: 5px 30px;
-    bonder-radius: 30px 
+    border-radius: 30px 
+}
+
+ol{
+    margin: 10px auto;
+    padding: 30px auto;
+    text-align: center;
+}
+li{
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
 }
