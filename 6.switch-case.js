@@ -18,5 +18,6 @@ switch (opcao) {
         break;
 
     default:
+        console.log
         break;
 }
