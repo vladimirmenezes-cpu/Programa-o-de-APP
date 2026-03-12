@@ -57,3 +57,17 @@ nomes.forEach((pessoa, indice) => {
     // precisamos acessar pessoa.nome
     console.log(`${indice + 1}. ${pessoa.nome}`);
 });
+
+console.log("\nNa lista de usuarios, encontre um usuario.")
+const usuarioencontrado = nomes.find(u => u.nome === "Ana")
+console.log(`Nome: ${usuarioencontrado.nome} \nIdade: ${usuarioencontrado.idade}`)
+
+
+console.log("\nNa lista de usuarios, encontre um usuario com idade de 45 anos.")
+const encontrarvelho = nomes.find(b => b.idade === 45 )
+console.log(`Usuário encontrado: ${encontrarvelho.nome}, que tem ${encontrarvelho.idade} anos.`)
+
+console.log("\nNa lista de usuarios,somando todas as idade:")
+const somaIdade = nomes.reduce((total, usuario) => total + usuario.idade, 0)
+console.log(somaIdade)
+
