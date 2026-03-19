@@ -65,3 +65,34 @@ button:hover {
 .hidden {
     display: none;
 }
+
+.label-calculos {
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 16px;
+}
+
+.checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.checkboxes input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #2563eb; /* cor do checkbox marcado */
+}
