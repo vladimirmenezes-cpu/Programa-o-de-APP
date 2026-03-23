@@ -1,22 +1,30 @@
 function calcular() {
-    let n1 = Number(document.getElementById("num1").value);
-    let n2 = Number(document.getElementById("num2").value);
-    let n3 = Number(document.getElementById("num3").value);
-    
-    if (document.getElementById("num1").value === "" || document.getElementById("num2").value === "" || document.getElementById("num3").value === "") {
-        alert("Por favor, preencha os tres campos!");
+    let v1 = document.getElementById("n1").value;
+    let v2 = document.getElementById("n2").value;
+    let v3 = document.getElementById("n3").value;
+
+    if (v1 === "" || v2 === "" || v3 === "") {
+        alert("Preencha os três campos!");
         return;
     }
-    let media = (n1 + n2 + n3) / 3
 
-    let resultado = "";
-    
+    let n1 = Number(v1);
+    let n2 = Number(v2);
+    let n3 = Number(v3);
+
+    let media = (n1 + n2 + n3) / 3;
+
+    document.getElementById("mediaVal").textContent = media.toFixed(2);
+
+    let badge = document.getElementById("badge");
+
     if (media >= 7) {
-    resultado = "Aprovado ✅";
-  } else {
-    resultado = "Reprovado ❌";
-  }
+        badge.textContent = "Aprovado";
+        badge.className = "badge aprovado";
+    } else {
+        badge.textContent = "Reprovado";
+        badge.className = "badge reprovado";
+    }
 
-  document.getElementById("resultado").innerText =
-    "Média: " + media.toFixed(2) + " - " + resultado;
+    document.getElementById("resultados").style.display = "flex";
 }

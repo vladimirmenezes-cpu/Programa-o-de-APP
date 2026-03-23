@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frutaria Verde — Calculadora de Maçãs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="deco-circle c1"></div>
+  <div class="deco-circle c2"></div>
+
+  <div class="card">
+    <div class="logo">
+      <div class="logo-icon">🍎</div>
+      <div class="logo-text">
+        <span class="logo-nome">Frutaria Verde</span>
+        <span class="logo-sub">Calculadora de Preços</span>
+      </div>
+    </div>
+
+    <h1>Calculadora de Maçãs</h1>
+    <p class="subtitulo">// informe a quantidade para calcular o total</p>
+
+    <div class="tabela-precos">
+      <div class="preco-item">
+        <div class="qtd">Menos de 12</div>
+        <div class="valor">R$ 1,30</div>
+        <div class="por">por unidade</div>
+      </div>
+      <div class="preco-item">
+        <div class="qtd">12 ou mais</div>
+        <div class="valor">R$ 1,00</div>
+        <div class="por">por unidade · atacado</div>
+      </div>
+    </div>
+
+    <label for="quantidade">Quantidade de maçãs</label>
+    <div class="input-wrap">
+      <span class="emoji-prefix">🍏</span>
+      <input
+        type="number"
+        id="quantidade"
+        placeholder="0"
+        min="1"
+        step="1"
+      />
+    </div>
+
+    <button onclick="calcular()">Calcular Total</button>
+
+    <div class="erro" id="erro">⚠ Por favor, informe uma quantidade válida (mínimo 1).</div>
+
+    <div class="resultado" id="resultado">
+      <div class="resultado-linha">
+        <span class="resultado-label">Quantidade</span>
+        <span class="resultado-val" id="res-qtd">—</span>
+      </div>
+      <div class="resultado-linha">
+        <span class="resultado-label">Preço unitário</span>
+        <span class="resultado-val" id="res-preco">—</span>
+      </div>
+      <hr class="divisor"/>
+      <div class="resultado-linha">
+        <span class="total-label">Total</span>
+        <span class="total-valor" id="res-total">—</span>
+      </div>
+      <div id="res-badge"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
