@@ -9,5 +9,5 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
 
-    stadin_open: true
-  tty: true
+    stdin_open: true
+    tty: true
